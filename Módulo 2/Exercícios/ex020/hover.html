@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        span:hover{
+            color: rgba(0, 0, 255, 0.623);
+        }
+
+        div > p{
+            display: none;
+        }
+
+        div:hover{
+            color: rgba(0, 0, 255, 0.623);
+            text-decoration: underline;
+        }
+
+        div:hover > p{
+            display: block;
+            color: rgba(0, 0, 255, 0.623);
+            background-color: rgba(0, 0, 255, 0.116);
+            text-decoration: underline;
+            width: 120px;
+        }
+
+        .ident{
+            text-indent: 50px;
+        }
+
+        .preto:visited{
+            color:rgba(0, 0, 255, 0.623);
+        }
+        .preto:active{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo <p class="ident"><span>&darr;</span></p></p>
+
+    <div>
+        Passe o mouse aqui
+        <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="external" class="preto">Link escondido...</a></p>
+    </div>
+
+    <p>Fim do exemplo</p>
+</body>
+</html>
